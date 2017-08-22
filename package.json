@@ -1,0 +1,16 @@
+{
+  "name": "cortico-theme-semantic-ui",
+  "version": "1.0.0",
+  "description": "Theme of Semantic UI for Cortico",
+  "main": "index.js",
+  "repository": "https://github.com/corticoAI/cortico-theme-semantic-ui",
+  "author": "Peter Beshai",
+  "license": "MIT",
+  "scripts": {
+    "build-css": "gulp build-css",
+    "watch-css": "gulp watch"
+  },
+  "dependencies": {
+    "semantic-ui": "^2.2.13"
+  }
+}
