@@ -1,5 +1,5 @@
 # Cortico Theme for Semantic-UI
 
-* [https://semantic-ui.com](Semantic UI)
+* [Semantic UI](https://semantic-ui.com)
 
 
