@@ -10,7 +10,7 @@
     "build-css": "gulp build-css",
     "watch-css": "gulp watch"
   },
-  "dependencies": {
+  "devDependencies": {
     "semantic-ui": "^2.2.13"
   }
 }
