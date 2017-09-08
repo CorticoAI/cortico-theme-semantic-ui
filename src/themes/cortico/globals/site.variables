@@ -3,7 +3,26 @@
 *******************************/
 
 @fontSize : 16px;
-@pageFont: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-@headerFont: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+@pageFont: proxima-nova, "Proxima Nova", "Helvetica Neue", Arial, Helvetica, sans-serif;
+@headerFont: @pageFont;
 
 @importGoogleFonts : false;
+
+@h1 : unit((31 / 14), rem);
+@h2 : unit((26 / 14), rem);
+@h3 : unit((22 / 14), rem);
+@h4 : unit((18 / 14), rem);
+@h5 : unit((14 / 14), rem);
+@headerFontWeight: 600;
+
+
+
+
+// Side bar layout
+@sidebarBackground: #F4F7FA;
+@sidebarH2Background: #f8fafc;
+@sidebarH2Border: hsla(210, 40%, 90%, 1);
+@sidebarH2Shadow: hsla(209, 41%, 94%, 1);
+@sidebarColor: #446281;
+@sidebarWidth: 300px;
+

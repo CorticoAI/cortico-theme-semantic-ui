@@ -22,12 +22,12 @@
   vertical-align: baseline;
   background: #E0E1E2 none;
   color: rgba(0, 0, 0, 0.6);
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: proxima-nova, "Proxima Nova", "Helvetica Neue", Arial, Helvetica, sans-serif;
   margin: 0em 0.25em 0em 0em;
-  padding: 0.78571429em 1.5em 0.78571429em;
+  padding: 0.78571429em 1em 0.78571429em;
   text-transform: none;
   text-shadow: none;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 1em;
   font-style: normal;
   text-align: center;
@@ -239,7 +239,7 @@
 }
 .ui.animated.button .visible.content {
   position: relative;
-  margin-right: 1.5em;
+  margin-right: 1em;
 }
 .ui.animated.button .hidden.content {
   position: absolute;
@@ -663,7 +663,7 @@
 
 .ui.compact.buttons .button,
 .ui.compact.button {
-  padding: 0.58928571em 1.125em 0.58928571em;
+  padding: 0.58928571em 0.75em 0.58928571em;
 }
 .ui.compact.icon.buttons .button,
 .ui.compact.icon.button {
@@ -671,7 +671,7 @@
 }
 .ui.compact.labeled.icon.buttons .button,
 .ui.compact.labeled.icon.button {
-  padding: 0.58928571em 3.69642857em 0.58928571em;
+  padding: 0.58928571em 3.32142857em 0.58928571em;
 }
 
 /*-------------------
@@ -871,8 +871,8 @@
 .ui.labeled.icon.buttons .button,
 .ui.labeled.icon.button {
   position: relative;
-  padding-left: 4.07142857em !important;
-  padding-right: 1.5em !important;
+  padding-left: 3.57142857em !important;
+  padding-right: 1em !important;
 }
 
 /* Left Labeled */
@@ -902,8 +902,8 @@
 
 /* Right Labeled */
 .ui[class*="right labeled"].icon.button {
-  padding-right: 4.07142857em !important;
-  padding-left: 1.5em !important;
+  padding-right: 3.57142857em !important;
+  padding-left: 1em !important;
 }
 .ui[class*="right labeled"].icon.button > .icon {
   left: auto;
@@ -949,8 +949,8 @@
 /* Fluid Labeled */
 .ui.fluid[class*="left labeled"].icon.button,
 .ui.fluid[class*="right labeled"].icon.button {
-  padding-left: 1.5em !important;
-  padding-right: 1.5em !important;
+  padding-left: 1em !important;
+  padding-right: 1em !important;
 }
 
 /*--------------
@@ -3674,12 +3674,6 @@
 .ui.vertical.buttons .button:only-child {
   border-radius: 0.28571429rem;
 }
-
-
-/*******************************
-         Theme Overrides
-*******************************/
-
 
 
 /*******************************

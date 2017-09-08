@@ -26,7 +26,7 @@ body {
   overflow-x: hidden;
   min-width: 320px;
   background: #FFFFFF;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: proxima-nova, "Proxima Nova", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.4285em;
   color: rgba(0, 0, 0, 0.87);
@@ -43,24 +43,24 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: proxima-nova, "Proxima Nova", "Helvetica Neue", Arial, Helvetica, sans-serif;
   line-height: 1.28571429em;
   margin: calc(2rem -  0.14285714em ) 0em 1rem;
-  font-weight: bold;
+  font-weight: 600;
   padding: 0em;
 }
 h1 {
   min-height: 1rem;
-  font-size: 2rem;
+  font-size: 2.21428571rem;
 }
 h2 {
-  font-size: 1.71428571rem;
+  font-size: 1.85714286rem;
 }
 h3 {
-  font-size: 1.28571429rem;
+  font-size: 1.57142857rem;
 }
 h4 {
-  font-size: 1.07142857rem;
+  font-size: 1.28571429rem;
 }
 h5 {
   font-size: 1rem;
@@ -187,6 +187,175 @@ body .ui.inverted::-webkit-scrollbar-thumb:window-inactive {
 }
 body .ui.inverted::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.35);
+}
+h1 {
+  font-weight: 300;
+}
+.ui.label.icon-only .icon {
+  margin-right: 0;
+}
+.ui.form.center.aligned .ui.selection,
+.ui.form.center.aligned input {
+  text-align: center;
+}
+.sidebar-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100%;
+  /** overrides for Semantic UI */
+}
+.sidebar-layout .left-sidebar {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 300px;
+          flex: 0 0 300px;
+  background: #F4F7FA;
+  color: #446281;
+}
+.sidebar-layout .main-area {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-shadow: 0 0px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0px 4px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  
+/* needed to get box shadow on top of side columns */
+}
+.sidebar-layout .right-sidebar {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 300px;
+          flex: 0 0 300px;
+  background: #F4F7FA;
+  color: #446281;
+}
+.sidebar-layout .sidebar-stat-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.sidebar-layout .sidebar-stat-item .value {
+  font-weight: 600;
+  text-align: right;
+}
+.sidebar-layout .sidebar-stat-item .secondary-value {
+  margin-right: 1rem;
+  text-align: right;
+  font-weight: 400;
+  color: rgba(68, 98, 129, 0.6);
+}
+.sidebar-layout .left-sidebar,
+.sidebar-layout .right-sidebar {
+  font-size: 1rem;
+}
+.sidebar-layout .left-sidebar .ui.form .field > label,
+.sidebar-layout .right-sidebar .ui.form .field > label,
+.sidebar-layout .left-sidebar .ui.header,
+.sidebar-layout .right-sidebar .ui.header {
+  color: #446281;
+}
+.sidebar-layout .left-sidebar .ui.form .field > label,
+.sidebar-layout .right-sidebar .ui.form .field > label {
+  margin-bottom: 0;
+  font-weight: 400;
+}
+.sidebar-layout .left-sidebar .ui.form input:not([type]),
+.sidebar-layout .right-sidebar .ui.form input:not([type]),
+.sidebar-layout .left-sidebar .ui.form input[type="date"],
+.sidebar-layout .right-sidebar .ui.form input[type="date"],
+.sidebar-layout .left-sidebar .ui.form input[type="datetime-local"],
+.sidebar-layout .right-sidebar .ui.form input[type="datetime-local"],
+.sidebar-layout .left-sidebar .ui.form input[type="email"],
+.sidebar-layout .right-sidebar .ui.form input[type="email"],
+.sidebar-layout .left-sidebar .ui.form input[type="number"],
+.sidebar-layout .right-sidebar .ui.form input[type="number"],
+.sidebar-layout .left-sidebar .ui.form input[type="password"],
+.sidebar-layout .right-sidebar .ui.form input[type="password"],
+.sidebar-layout .left-sidebar .ui.form input[type="search"],
+.sidebar-layout .right-sidebar .ui.form input[type="search"],
+.sidebar-layout .left-sidebar .ui.form input[type="tel"],
+.sidebar-layout .right-sidebar .ui.form input[type="tel"],
+.sidebar-layout .left-sidebar .ui.form input[type="time"],
+.sidebar-layout .right-sidebar .ui.form input[type="time"],
+.sidebar-layout .left-sidebar .ui.form input[type="text"],
+.sidebar-layout .right-sidebar .ui.form input[type="text"],
+.sidebar-layout .left-sidebar .ui.form input[type="file"],
+.sidebar-layout .right-sidebar .ui.form input[type="file"],
+.sidebar-layout .left-sidebar .ui.form input[type="url"],
+.sidebar-layout .right-sidebar .ui.form input[type="url"],
+.sidebar-layout .left-sidebar .ui.selection.dropdown,
+.sidebar-layout .right-sidebar .ui.selection.dropdown {
+  border: 1px solid rgba(45, 92, 140, 0.15);
+}
+.sidebar-layout .left-sidebar .ui.selection.dropdown:hover,
+.sidebar-layout .right-sidebar .ui.selection.dropdown:hover {
+  border: 1px solid rgba(45, 92, 140, 0.3);
+}
+.sidebar-layout .left-sidebar .ui.selection.active.dropdown:hover,
+.sidebar-layout .right-sidebar .ui.selection.active.dropdown:hover,
+.sidebar-layout .left-sidebar .ui.selection.dropdown:focus,
+.sidebar-layout .right-sidebar .ui.selection.dropdown:focus,
+.sidebar-layout .left-sidebar .ui.selection.active.dropdown,
+.sidebar-layout .right-sidebar .ui.selection.active.dropdown {
+  border-color: #96C8DA;
+}
+.sidebar-layout .left-sidebar .ui.form input:not([type]):focus,
+.sidebar-layout .right-sidebar .ui.form input:not([type]):focus,
+.sidebar-layout .left-sidebar .ui.form input[type="date"]:focus,
+.sidebar-layout .right-sidebar .ui.form input[type="date"]:focus,
+.sidebar-layout .left-sidebar .ui.form input[type="datetime-local"]:focus,
+.sidebar-layout .right-sidebar .ui.form input[type="datetime-local"]:focus,
+.sidebar-layout .left-sidebar .ui.form input[type="email"]:focus,
+.sidebar-layout .right-sidebar .ui.form input[type="email"]:focus,
+.sidebar-layout .left-sidebar .ui.form input[type="number"]:focus,
+.sidebar-layout .right-sidebar .ui.form input[type="number"]:focus,
+.sidebar-layout .left-sidebar .ui.form input[type="password"]:focus,
+.sidebar-layout .right-sidebar .ui.form input[type="password"]:focus,
+.sidebar-layout .left-sidebar .ui.form input[type="search"]:focus,
+.sidebar-layout .right-sidebar .ui.form input[type="search"]:focus,
+.sidebar-layout .left-sidebar .ui.form input[type="tel"]:focus,
+.sidebar-layout .right-sidebar .ui.form input[type="tel"]:focus,
+.sidebar-layout .left-sidebar .ui.form input[type="time"]:focus,
+.sidebar-layout .right-sidebar .ui.form input[type="time"]:focus,
+.sidebar-layout .left-sidebar .ui.form input[type="text"]:focus,
+.sidebar-layout .right-sidebar .ui.form input[type="text"]:focus,
+.sidebar-layout .left-sidebar .ui.form input[type="file"]:focus,
+.sidebar-layout .right-sidebar .ui.form input[type="file"]:focus,
+.sidebar-layout .left-sidebar .ui.form input[type="url"]:focus,
+.sidebar-layout .right-sidebar .ui.form input[type="url"]:focus {
+  border-color: #85B7D9;
+}
+.sidebar-layout .left-sidebar h1,
+.sidebar-layout .right-sidebar h1 {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.sidebar-layout .left-sidebar h2,
+.sidebar-layout .right-sidebar h2 {
+  font-size: 1.0rem;
+  letter-spacing: 0.11rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.sidebar-layout .left-sidebar .padded.grid h2,
+.sidebar-layout .right-sidebar .padded.grid h2 {
+  margin-left: -1rem;
+  margin-right: -1rem;
+  padding: 0.7rem 1rem;
+  background: #f8fafc;
+  border: 1px solid #dbe6f0;
+  border-left: 0;
+  border-right: 0;
+  -webkit-box-shadow: inset 0px 1px 0 #fff, 0 1px 0 #e9f0f6;
+          box-shadow: inset 0px 1px 0 #fff, 0 1px 0 #e9f0f6;
+}
+.sidebar-layout .left-sidebar .padded.grid h2:first-child,
+.sidebar-layout .right-sidebar .padded.grid h2:first-child {
+  margin-top: -1rem;
+  border-top: 0;
 }
 
 

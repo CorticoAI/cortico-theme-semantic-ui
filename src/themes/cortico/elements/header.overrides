@@ -1,0 +1,13 @@
+h1.ui.header {
+  font-weight: 300;
+}
+h2.ui.header {
+  font-weight: 400;
+}
+
+h3.ui.header,
+h4.ui.header,
+h5.ui.header {
+  font-weight: 600;
+}
+

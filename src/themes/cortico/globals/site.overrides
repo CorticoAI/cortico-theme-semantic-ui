@@ -1,0 +1,156 @@
+h1 {
+  font-weight: 300;
+}
+
+
+// new additions (not overrides)
+// get rid of excessive right space when only an icon is in a label
+.ui.label.icon-only .icon {
+  margin-right: 0;
+}
+
+.ui.form.center.aligned {
+  .ui.selection, input {
+    text-align: center;
+  }
+}
+
+
+// sidebar layout
+
+.sidebar-layout {
+  display: flex;
+  min-height: 100%;
+
+  .left-sidebar {
+    flex: 0 0 @sidebarWidth;
+    background: @sidebarBackground;
+    color: @sidebarColor;
+  }
+
+  .main-area {
+    flex: 1;
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.15);
+    z-index: 1; /* needed to get box shadow on top of side columns */
+  }
+
+  .right-sidebar {
+    flex: 0 0 @sidebarWidth;
+    background: @sidebarBackground;
+    color: @sidebarColor;
+  }
+
+  .sidebar-stat-item {
+    display: flex;
+    justify-content: space-between;
+
+    .value {
+      font-weight: 600;
+      text-align: right;
+    }
+
+    .secondary-value {
+      margin-right: 1rem;
+      text-align: right;
+      font-weight: 400;
+      color: fade(@sidebarColor, 60%);
+    }
+  }
+
+  /** overrides for Semantic UI */
+  .left-sidebar,
+  .right-sidebar {
+    font-size: 1rem;
+
+    .ui.form .field > label,
+    .ui.header {
+       color: @sidebarColor;
+    }
+
+    .ui.form .field > label {
+      margin-bottom: 0;
+      font-weight: 400;
+    }
+
+    .ui.form input:not([type]), .ui.form input[type="date"], .ui.form input[type="datetime-local"], .ui.form input[type="email"], .ui.form input[type="number"], .ui.form input[type="password"], .ui.form input[type="search"], .ui.form input[type="tel"], .ui.form input[type="time"], .ui.form input[type="text"], .ui.form input[type="file"], .ui.form input[type="url"],
+    .ui.selection.dropdown {
+      border: 1px solid rgba(45, 92, 140, 0.15);
+    }
+
+    .ui.selection.dropdown:hover {
+      border: 1px solid rgba(45, 92, 140, 0.3);
+    }
+
+    // this rule undoes the overrides above
+    .ui.selection.active.dropdown:hover,
+    .ui.selection.dropdown:focus,
+    .ui.selection.active.dropdown {
+      border-color: #96C8DA;
+    }
+
+    // this rule undoes the overrides above
+    .ui.form input:not([type]):focus, .ui.form input[type="date"]:focus, .ui.form input[type="datetime-local"]:focus, .ui.form input[type="email"]:focus, .ui.form input[type="number"]:focus, .ui.form input[type="password"]:focus, .ui.form input[type="search"]:focus, .ui.form input[type="tel"]:focus, .ui.form input[type="time"]:focus, .ui.form input[type="text"]:focus, .ui.form input[type="file"]:focus, .ui.form input[type="url"]:focus {
+      border-color: #85B7D9;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 300;
+    }
+
+    h2 {
+      font-size: 1.0rem;
+      letter-spacing: 0.11rem;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .padded.grid h2 {
+      margin-left: -1rem;
+      margin-right: -1rem;
+      padding: 0.7rem 1rem;
+      background: @sidebarH2Background;
+      border: 1px solid @sidebarH2Border;
+      border-left: 0;
+      border-right: 0;
+      box-shadow: inset 0px 1px 0 #fff, 0 1px 0 @sidebarH2Shadow;
+
+      &:first-child {
+        margin-top: -1rem;
+        border-top: 0;
+      }
+    }
+  }
+}
+
+
+
+// simple full page layout
+.simple-full-page {
+  p {
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+
+  > .ui.segment.vertical {
+    min-height: 500px;
+    padding: 100px 0;
+  }
+
+  h1.ui.header {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.muted {
+  color: #888;
+
+  .ui.header {
+    color: #888;
+  }
+}

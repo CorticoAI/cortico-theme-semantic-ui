@@ -1,0 +1,12 @@
+/*******************************
+            Button
+*******************************/
+
+/*-------------------
+       Element
+--------------------*/
+
+/* Button */
+@verticalPadding: @inputVerticalPadding;
+@horizontalPadding: 1em;
+@fontWeight: 600;
