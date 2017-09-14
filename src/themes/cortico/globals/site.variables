@@ -26,3 +26,4 @@
 @sidebarColor: #446281;
 @sidebarWidth: 300px;
 
+@corticoBlue: #27303C;

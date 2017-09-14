@@ -93,12 +93,12 @@ h1 {
       border-color: #85B7D9;
     }
 
-    h1 {
+    h1, h1.ui.header {
       font-size: 1.6rem;
       font-weight: 300;
     }
 
-    h2 {
+    h2, h2.ui.header {
       font-size: 1.0rem;
       letter-spacing: 0.11rem;
       text-transform: uppercase;
@@ -134,7 +134,7 @@ h1 {
 
   > .ui.segment.vertical {
     min-height: 500px;
-    padding: 100px 0;
+    padding: 40px 0;
   }
 
   h1.ui.header {
